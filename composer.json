@@ -23,7 +23,7 @@
 		"icybee/module-contents": "*"
 	},
 	"suggest": {
-        "icybee/comments": "Allows users to attach comments to nodes."
+        "icybee/module-comments": "Allows users to attach comments to nodes."
     },
 	"autoload": {
 		"classmap": [ "lib" ]
