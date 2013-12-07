@@ -19,11 +19,11 @@ use Brickrouge\Element;
  */
 class EditBlock extends \Icybee\Modules\Contents\EditBlock
 {
-	protected function get_children()
+	protected function lazy_get_children()
 	{
 		return array_merge
 		(
-			parent::get_children(), array
+			parent::lazy_get_children(), array
 			(
 				Article::DATE => new \Brickrouge\DateTime
 				(
