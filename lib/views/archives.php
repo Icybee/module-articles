@@ -15,12 +15,10 @@ class ArchivesView extends \Icybee\Modules\Views\View
 {
 	/**
 	 * Returns records grouped by month.
-	 *
-	 * @see Icybee\Modules\Views.View::provide()
 	 */
-	protected function provide($provider, &$context, array $conditions)
+	protected function provide($provider, array $conditions)
 	{
-		$records = parent::provide($provider, $context, $conditions);
+		$records = parent::provide($provider, $conditions);
 
 		$by_month = array();
 
