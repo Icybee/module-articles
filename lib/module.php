@@ -20,29 +20,26 @@ class Module extends \Icybee\Modules\Contents\Module
 	 */
 	protected function lazy_get_views()
 	{
-		$assets = array
-		(
-			'css' => array(DIR . 'public/page.css')
-		);
+		$assets = [ 'css' => [ DIR . 'public/page.css' ] ];
 
-		return \ICanBoogie\array_merge_recursive
-		(
-			parent::lazy_get_views(), array
-			(
-				'list' => array
-				(
-					'assets' => $assets
-				),
+		return \ICanBoogie\array_merge_recursive(parent::lazy_get_views(), [
 
-				'archives' => array
-				(
-					'title' => "Archives des articles",
-					'class' => __NAMESPACE__ . '\ArchivesView',
-					'provider' => 'Icybee\Modules\Contents\ViewProvider',
-					'assets' => $assets,
-					'renders' => View::RENDERS_MANY
-				)
-			)
-		);
+			'list' => [
+
+				View::ASSETS => $assets
+
+			],
+
+			'archives' => [
+
+				View::TITLE => "Archives des articles",
+				View::CLASSNAME => __NAMESPACE__ . '\ArchivesView',
+				View::PROVIDER => 'Icybee\Modules\Nodes\ViewProvider',
+				View::ASSETS => $assets,
+				View::RENDERS => View::RENDERS_MANY
+
+			]
+
+		]);
 	}
 }
