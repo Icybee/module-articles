@@ -11,7 +11,7 @@
 
 namespace Icybee\Modules\Articles;
 
-use Icybee\Modules\Views\View;
+use Icybee\Modules\Views\ViewOptions;
 
 class Module extends \Icybee\Modules\Contents\Module
 {
@@ -26,17 +26,17 @@ class Module extends \Icybee\Modules\Contents\Module
 
 			'list' => [
 
-				View::ASSETS => $assets
+				ViewOptions::ASSETS => $assets
 
 			],
 
 			'archives' => [
 
-				View::TITLE => "Archives des articles",
-				View::CLASSNAME => __NAMESPACE__ . '\ArchivesView',
-				View::PROVIDER => 'Icybee\Modules\Nodes\ViewProvider',
-				View::ASSETS => $assets,
-				View::RENDERS => View::RENDERS_MANY
+				ViewOptions::TITLE => "Archives des articles",
+				ViewOptions::CLASSNAME => __NAMESPACE__ . '\ArchivesView',
+				ViewOptions::PROVIDER_CLASSNAME => ViewOptions::PROVIDER_CLASSNAME_AUTO,
+				ViewOptions::ASSETS => $assets,
+				ViewOptions::RENDERS => ViewOptions::RENDERS_MANY
 
 			]
 
