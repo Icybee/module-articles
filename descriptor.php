@@ -2,23 +2,26 @@
 
 namespace Icybee\Modules\Articles;
 
-use ICanBoogie\Module;
+use ICanBoogie\Module\Descriptor;
 use ICanBoogie\ActiveRecord\Model;
 
-return array
-(
-	Module::T_CATEGORY => 'contents',
-	Module::T_DESCRIPTION => 'Introduces the Article content type.',
-	Module::T_EXTENDS => 'contents',
-	Module::T_MODELS => array
-	(
-		'primary' => array
-		(
-			Model::T_EXTENDS => 'contents'
-		)
-	),
+return  [
 
-	Module::T_NAMESPACE => __NAMESPACE__,
-	Module::T_TITLE => 'Articles',
-	Module::T_VERSION => '1.0'
-);
+	Descriptor::CATEGORY => 'contents',
+	Descriptor::DESCRIPTION => 'Introduces the Article content type.',
+	Descriptor::INHERITS => 'contents',
+	Descriptor::MODELS => [
+
+		'primary' => [
+
+			Model::EXTENDING => 'contents'
+
+		]
+
+	],
+
+	Descriptor::NS => __NAMESPACE__,
+	Descriptor::TITLE => 'Articles',
+	Descriptor::VERSION => '1.0'
+
+];

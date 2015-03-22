@@ -33,7 +33,7 @@ class Module extends \Icybee\Modules\Contents\Module
 			'archives' => [
 
 				ViewOptions::TITLE => "Archives des articles",
-				ViewOptions::CLASSNAME => __NAMESPACE__ . '\ArchivesView',
+				ViewOptions::CLASSNAME => ArchivesView::class,
 				ViewOptions::PROVIDER_CLASSNAME => ViewOptions::PROVIDER_CLASSNAME_AUTO,
 				ViewOptions::ASSETS => $assets,
 				ViewOptions::RENDERS => ViewOptions::RENDERS_MANY

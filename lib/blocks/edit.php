@@ -11,8 +11,11 @@
 
 namespace Icybee\Modules\Articles;
 
-use Brickrouge\Form;
+use ICanBoogie\DateTime;
+
+use Brickrouge\DateTime as DateTimeElement;
 use Brickrouge\Element;
+use Brickrouge\Group;
 
 /**
  * A block used to edit articles.
@@ -21,20 +24,16 @@ class EditBlock extends \Icybee\Modules\Contents\EditBlock
 {
 	protected function lazy_get_children()
 	{
-		return array_merge
-		(
-			parent::lazy_get_children(), array
-			(
-				Article::DATE => new \Brickrouge\DateTime
-				(
-					array
-					(
-						Form::LABEL => 'Date',
-						Element::REQUIRED => true,
-						Element::DEFAULT_VALUE => date('Y-m-d H:i:s')
-					)
-				)
-			)
-		);
+		return array_merge(parent::lazy_get_children(), [
+
+			Article::DATE => new DateTimeElement([
+
+				Group::LABEL => 'Date',
+				Element::REQUIRED => true,
+				Element::DEFAULT_VALUE => DateTime::now()
+
+			])
+
+		]);
 	}
 }

@@ -11,10 +11,12 @@
 
 namespace Icybee\Modules\Articles;
 
+use Icybee\Modules\Contents\Content;
+
 /**
  * An article.
  */
-class Article extends \Icybee\Modules\Contents\Content
+class Article extends Content
 {
 
 }

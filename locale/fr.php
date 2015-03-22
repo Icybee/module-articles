@@ -1,32 +1,36 @@
 <?php
 
-return array
-(
-	'articles' => array
-	(
-		'count' => array
-		(
+return [
+
+	'articles' => [
+
+		'count' => [
+
 			'none' => 'Aucun article',
 			'one' => 'Un article',
 			'other' => ':count articles'
-		),
 
-		'search' => array
-		(
-			'found' => array
-			(
+		],
+
+		'search' => [
+
+			'found' => [
+
 				'none' => 'Aucun résulat trouvé dans les articles.',
 				'one' => 'Un résultat trouvé dans les articles.',
 				'other' => ':count résultats trouvés dans les articles.'
-			),
 
-			'more' => array
-			(
+			],
+
+			'more' => [
+
 				'one' => 'Voir le résultat trouvé pour %search dans les articles',
 				'other' => 'Voir les :count résultats trouvés pour %search dans les articles'
-			)
-		),
+
+			]
+		],
 
 		'All records' => 'Tous les articles'
-	)
-);
+
+	]
+];

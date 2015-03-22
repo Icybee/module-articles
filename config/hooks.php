@@ -2,16 +2,16 @@
 
 namespace Icybee\Modules\Articles;
 
-$hooks = __NAMESPACE__ . '\Hooks::';
+$hooks = Hooks::class . '::';
 
-return array
-(
-	'patron.markups' => array
-	(
-		'articles' => array
-		(
-			$hooks . 'markup_articles', array
-			(
+return [
+
+	'patron.markups' => [
+
+		'articles' => [
+
+			$hooks . 'markup_articles', [
+
 				'by' => 'date',
 				'section' => null,
 				'order' => 'desc',
@@ -21,33 +21,37 @@ return array
 				'category' => null,
 				'tag' => null,
 				'author' => null
-			)
-		),
 
-		'articles:read' => array
-		(
-			$hooks . 'markup_articles_read', array
-			(
+			]
+		],
+
+		'articles:read' => [
+
+			$hooks . 'markup_articles_read', [
+
 				'section' => null,
 				'order' => 'desc',
 				'limit' => 0
-			)
-		),
 
-		'articles:by:date' => array
-		(
-			$hooks . 'markup_by_date', array
-			(
+			]
+		],
+
+		'articles:by:date' => [
+
+			$hooks . 'markup_by_date', [
+
 				'group' => null,
 				'order' => 'asc',
 				'start' => 0,
 				'limit' => 0
-			)
-		),
 
-		'articles:by:author' => array
-		(
+			]
+		],
+
+		'articles:by:author' => [
+
 			$hooks . 'markup_by_author'
-		)
-	)
-);
+
+		]
+	]
+];

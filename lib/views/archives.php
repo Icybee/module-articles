@@ -11,16 +11,20 @@
 
 namespace Icybee\Modules\Articles;
 
-class ArchivesView extends \Icybee\Modules\Contents\View
+use Icybee\Modules\Contents\View;
+
+class ArchivesView extends View
 {
 	/**
 	 * Returns records grouped by month.
+	 *
+	 * @inheritdoc
 	 */
 	protected function provide($provider, array $conditions)
 	{
 		$records = parent::provide($provider, $conditions);
 
-		$by_month = array();
+		$by_month = [];
 
 		foreach ($records as $record)
 		{
