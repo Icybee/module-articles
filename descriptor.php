@@ -8,7 +8,7 @@ use ICanBoogie\ActiveRecord\Model;
 return  [
 
 	Descriptor::CATEGORY => 'contents',
-	Descriptor::DESCRIPTION => 'Introduces the Article content type.',
+	Descriptor::DESCRIPTION => "Introduces the Article content type.",
 	Descriptor::INHERITS => 'contents',
 	Descriptor::MODELS => [
 
@@ -21,7 +21,6 @@ return  [
 	],
 
 	Descriptor::NS => __NAMESPACE__,
-	Descriptor::TITLE => 'Articles',
-	Descriptor::VERSION => '1.0'
+	Descriptor::TITLE => "Articles"
 
 ];
