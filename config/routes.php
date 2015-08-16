@@ -13,4 +13,8 @@ namespace Icybee\Modules\Articles;
 
 use Icybee\Routing\RouteMaker as Make;
 
-return Make::admin('articles', Routing\ArticlesAdminController::class);
+return Make::admin('articles', Routing\ArticlesAdminController::class, [
+
+	'id_name' => 'nid'
+
+]);
