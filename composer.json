@@ -25,6 +25,8 @@
 		"icybee/module-comments": "Allows users to attach comments to nodes."
 	},
 	"autoload": {
-		"classmap": [ "lib" ]
+		"psr-4": {
+			"Icybee\\Modules\\Articles\\": "lib"
+		}
 	}
 }
