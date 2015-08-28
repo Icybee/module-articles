@@ -11,35 +11,7 @@
 
 namespace Icybee\Modules\Articles;
 
-use Icybee\Modules\Views\ViewOptions;
-
 class Module extends \Icybee\Modules\Contents\Module
 {
-	/**
-	 * Adds the "archives" view type and adds assets to the inherited "list" view type.
-	 */
-	protected function lazy_get_views()
-	{
-		$assets = [ 'css' => [ DIR . 'public/page.css' ] ];
 
-		return \ICanBoogie\array_merge_recursive(parent::lazy_get_views(), [
-
-			'list' => [
-
-				ViewOptions::ASSETS => $assets
-
-			],
-
-			'archives' => [
-
-				ViewOptions::TITLE => "Archives des articles",
-				ViewOptions::CLASSNAME => ArchivesView::class,
-				ViewOptions::PROVIDER_CLASSNAME => ViewOptions::PROVIDER_CLASSNAME_AUTO,
-				ViewOptions::ASSETS => $assets,
-				ViewOptions::RENDERS => ViewOptions::RENDERS_MANY
-
-			]
-
-		]);
-	}
 }

@@ -13,7 +13,7 @@ namespace Icybee\Modules\Articles;
 
 use Icybee\Modules\Contents\View;
 
-class ArchivesView extends View
+class ArchiveView extends View
 {
 	/**
 	 * Returns records grouped by month.
