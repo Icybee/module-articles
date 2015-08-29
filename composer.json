@@ -16,10 +16,11 @@
 		"issues": "https://github.com/Icybee/module-articles/issues",
 		"source": "https://github.com/Icybee/module-articles"
 	},
+	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.5.0",
-		"icanboogie/module-installer": "~1.2.3",
-		"icybee/module-contents": "2.1.x-dev"
+		"icanboogie/module-installer": "^1.2.3",
+		"icybee/module-contents": "^3.0.0"
 	},
 	"suggest": {
 		"icybee/module-comments": "Allows users to attach comments to nodes."
