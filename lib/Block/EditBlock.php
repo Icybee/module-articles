@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Icybee\Modules\Articles;
+namespace Icybee\Modules\Articles\Block;
 
 use ICanBoogie\DateTime;
 
@@ -17,10 +17,12 @@ use Brickrouge\DateTime as DateTimeElement;
 use Brickrouge\Element;
 use Brickrouge\Group;
 
+use Icybee\Modules\Articles\Article;
+
 /**
  * A block used to edit articles.
  */
-class EditBlock extends \Icybee\Modules\Contents\EditBlock
+class EditBlock extends \Icybee\Modules\Contents\Block\EditBlock
 {
 	protected function lazy_get_children()
 	{
