@@ -1,13 +1,11 @@
-#view-articles-archives h2 sup,
-#view-articles-categories h2 sup
-{
+#view-articles-archive h2 sup,
+#view-articles-categories h2 sup {
 	font-weight: normal;
 	color: silver;
 }
 
-#view-articles-archives .months,
-#view-articles-categories .categories
-{
+#view-articles-archive .months,
+#view-articles-categories .categories {
 	overflow: hidden;
 	display: block;
 	list-style: none;
@@ -15,28 +13,24 @@
 	padding: 0;
 }
 
-#view-articles-archives .month,
-#view-articles-categories .category
-{
+#view-articles-archive .month,
+#view-articles-categories .category {
 	width: 48%;
 	float: left;
 }
 
-#view-articles-archives .month:nth-child(odd),
-#view-articles-categories .category:nth-child(odd)
-{
+#view-articles-archive .month:nth-child(odd),
+#view-articles-categories .category:nth-child(odd) {
 	margin-right: 4%;
 	clear: left;
 }
 
-#view-articles-archives .links,
-#view-articles-categories .links
-{
+#view-articles-archive .links,
+#view-articles-categories .links {
 	margin-left: 0;
 }
 
-#view-articles-archives .links
-{
+#view-articles-archive .links {
 	color: #ddd;
     line-height: 2em;
     list-style: square inside none;
