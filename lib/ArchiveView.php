@@ -11,7 +11,7 @@
 
 namespace Icybee\Modules\Articles;
 
-use Icybee\Modules\Contents\View;
+use Icybee\Modules\Nodes\View;
 
 class ArchiveView extends View
 {
