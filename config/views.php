@@ -10,7 +10,7 @@ return [
 
 	'articles' => [
 
-		'@inherits' => 'contents',
+		Options::DIRECTIVE_INHERITS => 'contents',
 
 		'list' => [
 
@@ -24,7 +24,12 @@ return [
 			Options::CLASSNAME => ArchiveView::class,
 			Options::PROVIDER_CLASSNAME => Options::PROVIDER_CLASSNAME_AUTO,
 			Options::ASSETS => $assets,
-			Options::RENDERS => Options::RENDERS_MANY
+			Options::RENDERS => Options::RENDERS_MANY,
+			Options::CONDITIONS => [
+
+				'order' => '-date'
+
+			]
 
 		]
 
