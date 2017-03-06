@@ -24,9 +24,9 @@
 	"prefer-stable": true,
 	"prefer-dist": true,
 	"require": {
-		"php": ">=5.5",
+		"php": ">=5.6",
 		"icanboogie/module-installer": "^1.2",
-		"icybee/module-contents": "^3.0"
+		"icybee/module-contents": "^4.0"
 	},
 	"suggest": {
 		"icybee/module-comments": "Allows users to attach comments to nodes."
