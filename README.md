@@ -1,10 +1,10 @@
 # Articles
 
 [![Release](https://img.shields.io/packagist/v/icybee/module-articles.svg)](https://packagist.org/packages/icybee/module-articles)
-[![Build Status](https://img.shields.io/travis/Icybee/module-articles/master.svg)](http://travis-ci.org/Icybee/module-articles)
+[![Build Status](https://img.shields.io/travis/Icybee/module-articles.svg)](http://travis-ci.org/Icybee/module-articles)
 [![HHVM](https://img.shields.io/hhvm/icybee/module-articles.svg)](http://hhvm.h4cc.de/package/icybee/module-articles)
-[![Code Quality](https://img.shields.io/scrutinizer/g/Icybee/module-articles/master.svg)](https://scrutinizer-ci.com/g/Icybee/module-articles)
-[![Code Coverage](https://img.shields.io/coveralls/Icybee/module-articles/master.svg)](https://coveralls.io/r/Icybee/module-articles)
+[![Code Quality](https://img.shields.io/scrutinizer/g/Icybee/module-articles.svg)](https://scrutinizer-ci.com/g/Icybee/module-articles)
+[![Code Coverage](https://img.shields.io/coveralls/Icybee/module-articles.svg)](https://coveralls.io/r/Icybee/module-articles)
 [![Packagist](https://img.shields.io/packagist/dt/icybee/module-articles.svg)](https://packagist.org/packages/icybee/module-articles)
 
 The Articles module (`articles`) introduces the "Articles" content type to the CMS
@@ -68,8 +68,8 @@ The test suite is ran with the `make test` command. [PHPUnit](https://phpunit.de
 
 The package is continuously tested by [Travis CI](http://about.travis-ci.org/).
 
-[![Build Status](https://img.shields.io/travis/Icybee/module-articles/master.svg)](https://travis-ci.org/Icybee/module-articles)
-[![Code Coverage](https://img.shields.io/coveralls/Icybee/module-articles/master.svg)](https://coveralls.io/r/Icybee/module-articles)
+[![Build Status](https://img.shields.io/travis/Icybee/module-articles.svg)](https://travis-ci.org/Icybee/module-articles)
+[![Code Coverage](https://img.shields.io/coveralls/Icybee/module-articles.svg)](https://coveralls.io/r/Icybee/module-articles)
 
 
 
