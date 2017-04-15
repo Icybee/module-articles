@@ -18,6 +18,7 @@ return  [
 
 	Descriptor::CATEGORY => 'contents',
 	Descriptor::DESCRIPTION => "Introduces the Article content type.",
+	Descriptor::ID => 'articles',
 	Descriptor::INHERITS => 'contents',
 	Descriptor::MODELS => [
 

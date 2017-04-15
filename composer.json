@@ -12,7 +12,7 @@
 		{
 			"name": "Olivier Laviale",
 			"email": "olivier.laviale@gmail.com",
-			"homepage": "http://www.weirdog.com/",
+			"homepage": "https://olvlvl.com/",
 			"role": "Developer"
 		}
 	],
@@ -24,8 +24,8 @@
 	"prefer-stable": true,
 	"prefer-dist": true,
 	"require": {
-		"php": ">=5.6",
-		"icanboogie/module-installer": "^1.2",
+		"php": "^5.6 || ^7.0",
+		"icanboogie/module-installer": "^4.0",
 		"icybee/module-contents": "^4.0"
 	},
 	"suggest": {
@@ -35,5 +35,13 @@
 		"psr-4": {
 			"Icybee\\Modules\\Articles\\": "lib"
 		}
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/Application.php"
+		]
+	},
+	"scripts": {
+		"post-autoload-dump": "ICanBoogie\\Autoconfig\\Hooks::on_autoload_dump"
 	}
 }
